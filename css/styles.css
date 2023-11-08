@@ -217,3 +217,201 @@ h1 {
   transform: scale(1.3);
   cursor: pointer;
  }
+
+ /*footer dashboard*/
+
+ /*Footer*/
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  bottom: 0;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  color: bisque;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+} 
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.redes {
+  display: grid;
+}
+.col a {
+  
+  font-size: 16px;
+  color: bisque;
+
+}
+.col a:hover {
+  color: #0DB8DE;
+}
+.col h3 {
+  width: fit-content;
+  border-bottom: 1px solid red;
+  margin: 20px 0;
+}
+.link {
+  margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.col ul li {
+  list-style: none;
+  color: bisque;
+}
+.col ul li a {
+  text-decoration: none;
+  color: bisque;
+}
+.col img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+/*botones*/
+
+/*Whattsapp*/
+.wht {
+  position: relative;
+  padding: 20px 45px;
+  text-decoration: none;
+  color: bisque;
+  letter-spacing: 10px;
+  margin-bottom: 25px ;
+}
+.btn-3 {
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+.btn-3::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: bisque;
+  transform: skew(20deg, 0deg);
+  transition: all 0.4s ease;
+}
+.btn-3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  border: 3px solid #03cc57; 
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+.btn-3:hover::after {
+  background-color: #ffffff31;
+  transform: skew(20deg, 0deg) translateX(280px);
+}
+.btn-3:hover::before {
+  background-color: #03cc57;
+  border: 3px solid #029740;
+  transform: skew(20deg, 0deg) scale(1.1); 
+}
+
+/*instagram*/
+.btn-2 {
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+.btn-2::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  left: -10px;
+  top: 0;
+  background-color: bisque;
+  transform: skew(20deg, 0deg);
+  transition: all 0.4s ease;
+}
+.btn-2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: skew(20deg, 0deg);
+  border: 3px solid #f79b35; 
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+.btn-2:hover::after {
+  background-color: #ffffff31;
+  transform: skew(20deg, 0deg) translateX(280px);
+}
+.btn-2:hover::before {
+  background-color: #900ad3;
+  border: 3px solid #f79b35;
+  transform: skew(20deg, 0deg) scale(1.1); 
+}
+/*Fin botones*/
+/*Fin footer*/
+
+/* SECCION: EXPLORA*/
+.grid-containerr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  height: max-content;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-links i {
+  font-size: 20px;
+}
